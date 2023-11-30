@@ -10,17 +10,39 @@
         /* color: rgb(52, 69, 89); --rgb 0-255 */
         /* color: rgba(52, 69, 89, 0,6); --rgb + alpha canal*/
         /* hex-code */
-        color: #679067;
+        color: #907b67;
         font-size: 30px;
         /* Absolute values: px, pt (typographic) */
+      }
+
+      #heading {
+        color: darkgoldenrod;
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .green-text {
+        color: green;
+      }
+
+      .font-size-large {
+        font-size: 80px;
       }
     </style>
   </head>
   <body>
     <!-- I am a commentary -->
     <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
-      iusto.
+      Lorem ipsum, dolor
+      <span class="green-text">sit amet consectetur adipisicing</span> elit.
+      Aspernatur, iusto.
+    </p>
+    <article>
+      <h2 id="heading">
+        <span class="green-text font-size-large">Mega</span>-super heading
+      </h2>
+    </article>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, provident.
     </p>
   </body>
 </html>
