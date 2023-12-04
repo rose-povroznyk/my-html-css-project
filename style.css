@@ -1,28 +1,16 @@
-h1,
-h2,
-h2 {
-  font-size: 100px;
-  background-color: aquamarine;
-}
-p {
-  /* color:blueviolet; -- word */
-  /* color: rgb(52, 69, 89); --rgb 0-255 */
-  /* color: rgba(52, 69, 89, 0,6); --rgb + alpha canal*/
-  /* hex-code */
-  color: #907b67;
-  font-size: 30px;
-  /* Absolute values: px, pt (typographic) */
+.main-article {
+  font-size: 60px;
+  color: brown;
+
+  font-style: italic;
 }
 
-#heading {
-  color: darkgoldenrod;
-  font-size: 50px;
-  font-weight: bold;
+.article-header {
+  color: blue;
+  text-align: center;
 }
-.green-text {
-  color: green;
-}
-
-.font-size-large {
-  font-size: 80px;
+.article-link {
+  color: inherit;
+  text-decoration: none;
+  border: 5px dotted goldenrod;
 }
