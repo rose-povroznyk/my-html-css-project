@@ -2,35 +2,33 @@
   box-sizing: border-box;
 }
 
-.container {
-  background-color: lime;
-  width: 80%;
-  height: 800px;
-  margin: 0 auto;
-}
-
-.wrapper {
-  background-color: dodgerblue;
-  width: 80%;
-  height: 800px;
-}
-
-.inner {
-  text-align: center;
-  font-size: 40px;
+.blocks {
+  position: fixed;
   width: 80px;
   height: 80px;
-  background-color: forestgreen;
   border: 1px solid black;
 }
 
-.div3 {
-  position: fixed;
+.block1 {
   top: 0;
+  left: 0;
+  background-color: red;
 }
 
-.div2 {
-  position: relative;
-  top: 10px;
-  left: 20px;
+.block2 {
+  top: 0;
+  right: 0;
+  background-color: green;
+}
+
+.block3 {
+  bottom: 0;
+  left: 0;
+  background-color: yellowgreen;
+}
+
+.block4 {
+  bottom: 0;
+  right: 0;
+  background-color: chocolate;
 }
