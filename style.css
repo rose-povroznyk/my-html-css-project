@@ -2,8 +2,35 @@
   box-sizing: border-box;
 }
 
-.paragraph {
+.container {
+  background-color: lime;
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: dodgerblue;
+  width: 80%;
+  height: 800px;
+}
+
+.inner {
+  text-align: center;
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: forestgreen;
+  border: 1px solid black;
+}
+
+.div3 {
+  position: fixed;
+  top: 0;
+}
+
+.div2 {
   position: relative;
-  margin-left: 50px;
-  /* left: 50px; */
+  top: 10px;
+  left: 20px;
 }
