@@ -2,33 +2,69 @@
   box-sizing: border-box;
 }
 
-.blocks {
-  position: fixed;
-  width: 80px;
-  height: 80px;
-  border: 1px solid black;
+.nav-list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
 }
 
-.block1 {
+.list-item {
+  display: inline-block;
+  position: relative;
+  background-color: rgba(255, 68, 0, 0.801);
+  padding: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.sub-nav-list {
+  display: none;
+  position: absolute;
+  top: 62px;
+  left: -25px;
+}
+
+.sub-list-item {
+  background-color: rgba(255, 68, 0, 0.801);
+  padding: 20px;
+  width: 150px;
+}
+.sub-list-item:hover {
+  background-color: rgba(255, 68, 0, 0.966);
+}
+
+.list-item:hover .sub-nav-list {
+  display: block;
+}
+
+.sub-sub-nav-list {
+  display: none;
+  position: absolute;
   top: 0;
-  left: 0;
-  background-color: red;
+  left: 110px;
 }
 
-.block2 {
+.cascade {
+  position: relative;
+}
+.cascade:hover .sub-sub-nav-list {
+  display: block;
+}
+
+.sub-sub-sub-nav-list {
+  display: none;
+  position: absolute;
   top: 0;
-  right: 0;
-  background-color: green;
+  left: 110px;
 }
 
-.block3 {
-  bottom: 0;
-  left: 0;
-  background-color: yellowgreen;
+.cascadetwo {
+  position: relative;
 }
-
-.block4 {
-  bottom: 0;
-  right: 0;
-  background-color: chocolate;
+.cascadetwo:hover .sub-sub-sub-nav-list {
+  display: block;
 }
