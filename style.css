@@ -2,69 +2,38 @@
   box-sizing: border-box;
 }
 
-.nav-list {
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-}
-
-.list-item {
-  display: inline-block;
-  position: relative;
-  background-color: rgba(255, 68, 0, 0.801);
-  padding: 20px;
-}
-
-.link {
-  text-decoration: none;
-  color: white;
+p {
   font-size: 20px;
-}
-
-.sub-nav-list {
-  display: none;
-  position: absolute;
-  top: 62px;
-  left: -25px;
-}
-
-.sub-list-item {
-  background-color: rgba(255, 68, 0, 0.801);
+  border: 2px solid gray;
   padding: 20px;
-  width: 150px;
-}
-.sub-list-item:hover {
-  background-color: rgba(255, 68, 0, 0.966);
-}
-
-.list-item:hover .sub-nav-list {
-  display: block;
-}
-
-.sub-sub-nav-list {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 110px;
-}
-
-.cascade {
   position: relative;
 }
-.cascade:hover .sub-sub-nav-list {
-  display: block;
-}
 
-.sub-sub-sub-nav-list {
-  display: none;
+p::before {
+  content: "\0022";
+  color: violet;
+  font-weight: bold;
+  font-size: 2rem;
   position: absolute;
-  top: 0;
-  left: 110px;
+  bottom: 72%;
+  left: 3px;
 }
 
-.cascadetwo {
-  position: relative;
+p::after {
+  content: "\0022";
+  color: violet;
+  font-weight: bold;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 8%;
+  left: 60%;
 }
-.cascadetwo:hover .sub-sub-sub-nav-list {
-  display: block;
+
+p::first-line {
+  background-color: violet;
+}
+p::first-letter {
+  color: blue;
+  font-size: 3rem;
+  font-family: "Whisper", cursive;
 }
